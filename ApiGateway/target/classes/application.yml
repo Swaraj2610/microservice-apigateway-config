@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+
+spring:
+  application:
+    name: APIGATEWAY
+  cloud:
+    gateway:
+      server:
+        webmvc:
+          routes:
+            - id: USERSERVICE
+              uri: lb://USERSERVICE
+              predicates:
+                - Path=/users/**
+
+            - id: HOTELSERVICE
+              uri: lb://HOTELSERVICE
+              predicates:
+                - Path=/hotels/**,/staffs/**
+
+            - id: RATINGSERVICE
+              uri: lb://RATINGSERVICE
+              predicates:
+                - Path=/rating/**
+  config:
+    import: optional:configserver:http://localhost:8084

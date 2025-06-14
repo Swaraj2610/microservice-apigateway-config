@@ -1,0 +1,10 @@
+F:\ApiGateWayMvc\UserService\src\main\java\com\apigateway\user\service\controller\UserController.java
+F:\ApiGateWayMvc\UserService\src\main\java\com\apigateway\user\service\entity\Ratings.java
+F:\ApiGateWayMvc\UserService\src\main\java\com\apigateway\user\service\entity\User.java
+F:\ApiGateWayMvc\UserService\src\main\java\com\apigateway\user\service\exceptions\GlobalExceptionHandler.java
+F:\ApiGateWayMvc\UserService\src\main\java\com\apigateway\user\service\exceptions\ResourceNotFoundException.java
+F:\ApiGateWayMvc\UserService\src\main\java\com\apigateway\user\service\payload\ApiResponse.java
+F:\ApiGateWayMvc\UserService\src\main\java\com\apigateway\user\service\repository\UserRepository.java
+F:\ApiGateWayMvc\UserService\src\main\java\com\apigateway\user\service\services\impl\UserServiceImpl.java
+F:\ApiGateWayMvc\UserService\src\main\java\com\apigateway\user\service\services\UserServices.java
+F:\ApiGateWayMvc\UserService\src\main\java\com\apigateway\user\service\UserServiceApplication.java

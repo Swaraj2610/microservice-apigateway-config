@@ -8,5 +8,5 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/Swaraj2610/microservice-apigateway-config
+          uri: <YOUR_GITHUB_REPOSITORY_CONTAINS_CONFIG_FILE>
           clone-on-start: true 

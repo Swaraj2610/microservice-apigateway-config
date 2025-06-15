@@ -6,8 +6,8 @@ spring:
     name: RATINGSERVICE
   datasource:
     url: jdbc:postgresql://localhost:5432/microservice
-    username: postgres
-    password: Swaraj@2610
+    username: <YOUR_USERNAME>
+    password: <YOUR_PASSWORD>
     driverClassName: org.postgresql.Driver
   jpa:
     hibernate:

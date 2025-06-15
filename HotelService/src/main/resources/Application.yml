@@ -6,7 +6,7 @@ spring:
     name: HOTELSERVICE
   datasource:
     url: jdbc:postgresql://localhost:5432/microservice
-    username: postgres
+    username: <YOUR_USERNAME>
     password: <YOUR_PASSWORD>
     driverClassName: org.postgresql.Driver
   jpa:

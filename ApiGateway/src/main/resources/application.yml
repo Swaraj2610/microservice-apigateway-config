@@ -1,0 +1,49 @@
+server:
+  port: 8080
+
+
+spring:
+  application:
+    name: APIGATEWAY
+  cloud:
+    gateway:
+      server:
+        webmvc:
+          routes:
+            - id: USERSERVICE
+              uri: lb://USERSERVICE
+              predicates:
+                - Path=/users/**
+
+            - id: HOTELSERVICE
+              uri: lb://HOTELSERVICE
+              predicates:
+                - Path=/hotels/**,/staffs/**
+
+            - id: RATINGSERVICE
+              uri: lb://HOTELSERVICE
+              predicates:
+                - Path=/rating/**
+  config:
+    import: optional:configserver:http://localhost:8084
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/microservice
+    username: postgres
+    password: Swaraj@2610
+    driverClassName: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+jwt:
+  secret: 684864wa78fa8f4ae8f7e68g4se5gsr4g68140g61seg40seg681e
+  expiration: 600000         
+  refresh-expiration:  1800000 
+
+
+ 

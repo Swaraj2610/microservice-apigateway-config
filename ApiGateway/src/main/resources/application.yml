@@ -29,8 +29,8 @@ spring:
 
   datasource:
     url: jdbc:postgresql://localhost:5432/microservice
-    username: postgres
-    password: Swaraj@2610
+    username: <YOUR_USERNAME>
+    password: <YOUR_PASSWORD>
     driverClassName: org.postgresql.Driver
   jpa:
     hibernate:
@@ -41,9 +41,9 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
 
 jwt:
-  secret: 684864wa78fa8f4ae8f7e68g4se5gsr4g68140g61seg40seg681e
-  expiration: 600000         
-  refresh-expiration:  1800000 
+  secret: <YOUR_SECRET>
+  expiration: <YOUR_EPIRATION>         
+  refresh-expiration:  <YOUR_REFREASHTOKENTIME> 
 
 
  
